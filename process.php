@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
 		$error[]='phone no is missing';
 	}
 
-
+}
 	if(!isset($error))
 	{
 		// we will see
@@ -64,7 +64,7 @@ if(isset($_POST['submit'])) {
 		}
 
 	}
-}
+
 ?>
 
 <html>
@@ -82,6 +82,10 @@ if(isset($_POST['submit'])) {
 	Phone No.
 	<input type="number" name="phone_no" value="<?php if(isset($_POST['phone_no'])) echo trim($_POST['phone_no']);?>">
 	<input type="submit" name="submit" value="submit">
+<button class="btn btn-outline-primary" type="submit" name="submit">Logout</button><br>
+
+
+  
 </form>
 
 <table width="50%" border="1">

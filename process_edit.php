@@ -78,6 +78,7 @@ if(isset($_POST['submit'])) {
 	Phone No.
 	<input type="number" name="phone_no" value="<?php if(isset($fetched_data['phone_no'])) {echo $fetched_data['phone_no']; } ?>">
 	<input type="submit" name="submit" value="Update">
+	
 </form>
 
 </html>
